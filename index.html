@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario de Metas de Estudio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="calendar-container">
+        <div class="calendar-header">
+            <button id="prevBtn">Anterior</button>
+            <h2 id="currentMonthYear"></h2>
+            <button id="nextBtn">Siguiente</button>
+        </div>
+        <div class="calendar-grid">
+            <div class="day-of-week">Dom</div>
+            <div class="day-of-week">Lun</div>
+            <div class="day-of-week">Mar</div>
+            <div class="day-of-week">Mié</div>
+            <div class="day-of-week">Jue</div>
+            <div class="day-of-week">Vie</div>
+            <div class="day-of-week">Sáb</div>
+        </div>
+        <div class="calendar-days" id="calendarDays"></div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3 id="modalDate"></h3>
+            <label for="studyHours">Horas de estudio diarias:</label>
+            <input type="number" id="studyHours" min="0" value="0">
+            <label for="weeklyGoal">Meta semanal (horas):</label>
+            <input type="number" id="weeklyGoal" min="1" value="10">
+            <button id="saveBtn">Guardar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
