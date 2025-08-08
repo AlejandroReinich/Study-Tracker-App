@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Mostrar horas de estudio si existen
             const hours = studyData[fullDate] || 0;
-            dayElement.innerHTML = `<span class="day-number">${day}</span><div class="total-hours">${hours}h</div>`;
+            dayElement.innerHTML = `<span class="day-number">${day}</span><div class="total-hours">Horas estudiadas: ${hours}h</div>`;
 
             dayElement.addEventListener('click', () => {
                 currentDayElement = dayElement;
